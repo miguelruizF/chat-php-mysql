@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+:root {
+    --color-fondo: #409eff;
+    --fuente: 'Rubik', sans-serif;
+    --color-boton: rgb(45, 84, 192);
+    --texto: rgb(36, 55, 131);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--color-fondo);
+    line-height: 1.2;
+    font-family: var(--fuente);
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+
+/*GLOBALES*/
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    /** = 1200px; **/
+    margin: 0 auto;
+}
+
+textarea {
+    border-radius: 5px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+
+/* UTILIDADES */
+
+.btn_option {
+    color: #fff;
+    background: var(--color-boton);
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.input_nombre {
+    border: 1px solid rgb(116, 116, 116);
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.label_nombre {
+    font-size: 40px;
+}
+
+.div_form {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    /* margin: 0 auto; */
+    /* text-align: center; */
+    align-items: center;
+    width: 80%;
+    height: 80%;
+}
+
+form {
+    align-items: center;
+    text-align: center;
+}
+
+.div_form_2 {
+    display: inline-block;
+}
+
+.div_form_2>form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.div_form_2>h1 {
+    margin-bottom: 50px;
+    color: var(--texto);
+}
+
+.btn_shadow {
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.margin-el {
+    margin: 10px 0;
+}
